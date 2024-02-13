@@ -3,35 +3,52 @@ conf:
     name: "public"
     vlan: 1
     count: 2
+    cpu: 1
+    ram: 2
+    os: rhel
+    sleep: 0
 
 kubernetes:
   - was:
     name: "was"
-    value: 10
+    vlan: 10
     count: 3
+    cpu: 1
+    ram: 6
   
   - manage: 
     name: "manage"
-    value: 20
+    vlan: 20
     count: 3
-  
+    cpu: 1
+    ram: 6
   
   - db: 
     name: "db"
-    value: 40
+    vlan: 40
     count: 3
+    cpu: 1
+    ram: 6
+    sleep: 30
 
   - backup:
     name: "backup"
-    value: 50
+    vlan: 50
     count: 1
+    cpu: 1
+    ram: 6
   
   - dev:
     name: "dev"  
-    value: 60
+    vlan: 60
     count: 3
+    cpu: 1
+    ram: 6
+
 window_Server:
   - auth:
     name: "auth"
-    value: 30
+    vlan: 30
     count: 2
+    cpu: 2
+    ram: 6

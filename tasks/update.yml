@@ -1,12 +1,15 @@
-- name: Start container
+- name: Update container configuration
   vars_files:
     - vars/vm.yml
     - vars/secret.yml
   community.general.proxmox:
     vmid: '{{ (item.conf.public.vlan | int * 100) +1  }}'
+    node: '{}'
     api_user: '{{ secret.api_user }}'
     api_password: '{{ secret.api_password}}'
     api_host: '{{ secret.api_host }}'
-    state: started
+    #netif: '불명'
+    update: true
+    tag: 
   loop:
     - vm.yml
