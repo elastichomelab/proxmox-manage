@@ -36,3 +36,24 @@ Author Information
 ------------------
 
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+
+
+# 참고
+
+files
+각 managed 서버에 배포할 파일의 위치
+설치에 필요한 파일이 위치하는 디렉터리
+handelrs
+linux service 를 처리하기 위해 사용
+리눅스 마다 상이한 서비스 명등을 처리하기 위한 디렉터리
+main.yml 에 작성
+tasks
+playerbook 의 tasks 와 동일
+defaults
+기본 변수 설정
+vars
+작업 수행 시 사용할 변수 정의
+templates
+managed 서버에 배포할 템플릿 파일의 위치
+meta
+roles 에 대한 정보, 호환 버전 등 메타 데이터 정의

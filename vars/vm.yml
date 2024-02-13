@@ -1,0 +1,37 @@
+conf: 
+  - public:
+    name: "public"
+    vlan: 1
+    count: 2
+
+kubernetes:
+  - was:
+    name: "was"
+    value: 10
+    count: 3
+  
+  - manage: 
+    name: "manage"
+    value: 20
+    count: 3
+  
+  
+  - db: 
+    name: "db"
+    value: 40
+    count: 3
+
+  - backup:
+    name: "backup"
+    value: 50
+    count: 1
+  
+  - dev:
+    name: "dev"  
+    value: 60
+    count: 3
+window_Server:
+  - auth:
+    name: "auth"
+    value: 30
+    count: 2

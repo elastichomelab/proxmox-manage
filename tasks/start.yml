@@ -1,0 +1,10 @@
+- name: Start container
+  vars_files:
+    - vars/vm.yml
+    - vars/secret.yml
+  community.general.proxmox:
+    vmid: '{}'
+    api_user: root@pam
+    api_password: 1q2w3e
+    api_host: node1
+    state: started
